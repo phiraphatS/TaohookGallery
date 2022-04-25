@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    font-size: 120%;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 30%;
+    margin: 50px auto 0px;
+    color: white;
+    background: #5f9ea0;
+    text-align: center;
+    border: 1px solid #b0c4de;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+form {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #b0c4de;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+.book-header {
+    width: 60%;
+    margin: 20px auto 0px;
+    color: white;
+    background: #999999;
+    text-align: center;
+    border: 1px solid #333;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+.book-form {
+    width: 60%;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    background: #f8f8f8;
+    border-radius: 0px 0px 10px 10px;
+}
+.homeheader{
+    padding-bottom: 1rem;
+}
+nav{
+    display: flex;
+    height: auto;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.nav-toggle{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+.logo{
+    margin: 40px 0 40px 0;
+    
+}
+ul{
+    flex-direction: column;
+    justify-content: center;
+    padding-left:0 ;
+    display: none;
+}
+ul li{
+    list-style-type: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border-bottom-style: solid ;
+    border-bottom-color: #ccc ;
+    border-bottom-width: 1px ;
+    padding: 5px 50px;
+}
+ul li a{
+    text-decoration: none;
+    color: #333;
+}
+ul li:first-child{
+    margin-top: 0;
+}
+ul li:hover{
+    opacity: 0.5;
+}
+.active{
+    display: flex;
+}
+.homecontent {
+    padding-top: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.input-group {
+margin: 10px 0px 10px 0px;
+}
+.input-group label{
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+.input-group input{
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5f9ea8;
+    border: none;
+    border-radius: 5px;
+}
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: center;
+    color: #a94442;
+}
+.success {
+    color: #3c763d;
+    background: #dff9d8;
+    border: 1px solid #3c763d;
+    margin-bottom: 20px;
+}
+.userbox{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom-style: solid ;
+    border-bottom-color: #ccc ;
+    border-bottom-width: 1px ;
+}
+.presentbox{
+    display: inline-block;
+    text-align: left;
+    padding: 50px;
+    background: white;
+    margin: 5vh 0;
+    border-radius: 5px;
+    border-bottom-style: solid ;
+    border-bottom-color: #ccc ;
+    border-bottom-width: 1px ;
+}
+.presentbox:hover{
+    opacity: 0.7;
+}
+.presentbox-line{
+    
+    width: 100%;
+    flex-direction: row;
+}
+.presentbox-line a{
+    text-decoration: none;
+    color: #333;
+}
+.contractbox{
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+    background: white;
+    margin: 3vh 0;
+    border-radius: 5px;
+    border-bottom-style: solid ;
+    border-bottom-color: #ccc ;
+    border-bottom-width: 1px ;
+}
+
+
+
+
+@media screen and (min-width: 800px){
+    nav {
+        height: 80px;
+        flex-direction: row;
+    }
+    .logo{
+        padding-left: 50px ;
+        margin: 0;
+        width: 20%;
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 80%;
+        flex-direction: row;
+    }
+    ul li{
+        display: inline-block;
+        margin: 0 70px 0 0;
+        text-align: left;
+        border-bottom-style: none ;
+        padding: 0;
+    }
+    .nav-toggle{
+        display: none;
+    }
+}
+.snip {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    margin: 8px;
+    max-width: 315px;
+    min-width: 230px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.snip * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+.snip:before,
+.snip:after {
+    background-color: rgba(0,0,0,0.5) ;
+    border-top: 50px solid rgba(0,0,0,0.5);
+    border-bottom: 50px solid rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+}
+.snip:before{
+    -webkit-transform: scaleY(2);
+    transform: scaleY()2;
+}
+.snip:after{
+    -webkit-transform: scaleY(2);
+    transform: scaleY()2;
+}
+.snip img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+.snip figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.snip h3 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.snip h3 span {
+    display: block;
+    font-weight: 700;
+}
+.snip a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+.snip:hover > img,
+.snip.hover > img {
+    opacity: 0.7;
+}
+.snip:hover:before,
+.snip.hover:before,
+.snip:hover:after,
+.snip.hover:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.snip:hover figcaption,
+.snip.hover figcaption {
+    opacity:1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
